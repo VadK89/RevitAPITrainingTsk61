@@ -21,7 +21,7 @@
                   DisplayMemberPath="Name"
                   Margin="5"/>
 
-        <Label Content="Смещение воздуховода"/>
+        <Label Content="Смещение воздуховода в футах"/>
         <TextBox Text="{Binding DuctOffset}" Margin="5"/>
 
         <Button Content="Применить"
