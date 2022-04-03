@@ -74,7 +74,7 @@ namespace RevitAPITrainingTsk61
 
 
             //создание воздуховодов
-            using (var ts = new Transaction(doc, "Create wall"))
+            using (var ts = new Transaction(doc, "Create duct"))
             {
                 ts.Start();
 
@@ -87,7 +87,7 @@ namespace RevitAPITrainingTsk61
                     if (duct is Duct)
                     {
                         Parameter offset = duct.get_Parameter(BuiltInParameter.RBS_OFFSET_PARAM);
-                                              
+                                            
                         offset.Set(DuctOffset);
                            
                     }
